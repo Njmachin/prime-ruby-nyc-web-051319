@@ -8,7 +8,5 @@ def prime?(num)
    for d in 2..(n - 1)
     is_prime = ((n % d) == 0) or is_prime
    end
-  not foundDivider
+  not is_prime
  end
-  
-  
