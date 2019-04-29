@@ -4,7 +4,9 @@ def prime?(num)
   if (num == 1 || num == 2)
     return true
   end
-  
+  if (num < 0)
+    return false
+  end
    for div in 2..(num - 1)
     is_prime = ((num % div) == 0) or is_prime
    end
