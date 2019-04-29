@@ -2,7 +2,7 @@ def prime?(num)
   is_prime = false
   
   if (num == 1 || num == 2)
-    is_prime = true
+    return true
   end
   
    for d in 2..(n - 1)
