@@ -1,14 +1,9 @@
 def prime?(num)
-  is_prime = false
-  
-  if (num == 1 || num == 2)
-    return true
-  end
-  if (num < 0)
+  for div in 2..(num - 1)
+    if (num % div) == 0
     return false
+    end
   end
-   for div in 2..(num - 1)
-    is_prime = ((num % div) == 0) or is_prime
-   end
-  not is_prime
- end
+
+  true
+end
