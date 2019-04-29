@@ -5,4 +5,4 @@ def prime?(num)
     is_prime = true
   end
   
-  
+  while
