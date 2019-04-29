@@ -5,12 +5,10 @@ def prime?(num)
     is_prime = true
   end
   
-  for d in 2..(n - 1)
-   if (n % d) == 0
-    return false
+   for d in 2..(n - 1)
+    is_prime = ((n % d) == 0) or is_prime
    end
-  end
-  return true
-end
+  not foundDivider
+ end
   
   
