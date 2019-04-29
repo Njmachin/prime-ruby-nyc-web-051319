@@ -5,8 +5,8 @@ def prime?(num)
     return true
   end
   
-   for d in 2..(n - 1)
-    is_prime = ((n % d) == 0) or is_prime
+   for div in 2..(num - 1)
+    is_prime = ((num % div) == 0) or is_prime
    end
   not is_prime
  end
